@@ -1,0 +1,41 @@
+<!DocType html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>hello</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+	</head>
+	<body class="container">
+		<div class="row" style="margin-top:40px;">
+			<table class="table table-condensed table-striped table-hover" ng-controller="Topic5Controller">
+				<tbody>
+					<tr>
+						<td>
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="fname" ng-model="fname"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lname" ng-model="lname"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="btn btn-primary" ng-click="onConcatBtnClick()">Concat</button>
+						</td>
+					</tr>
+					<tr ng-hide="fullName=='undefined'">
+						<td class="bg-warning">FullName : {{fullName}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="./bower_components/angular/angular.js" ></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
+
+ 
