@@ -1,16 +1,25 @@
 <!DocType html>
-<html ng-app>
-<head>
-<meta charset="UTF-8"> 
-<title>hello</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/bootstrap.css">
-</head>
-<body>
-<input type="text" ng-model="name"/>
-<h3>hello {{name}}</h3>
-<script type="text/javascript"  src="./bower_components/angular/angular.js" ></script>
-</body>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>hello</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+	</head>
+	<body class="container">
+		<div class="row">
+			<div class="btn-group" role="group" aria-label="true">
+			  <a href="#" ui-sref="home" type="button" class="btn btn-default">Home</a>
+			  <a href="#" ui-sref="about" type="button" class="btn btn-default">About-Us</a>
+			</div>
+		</div>
+		<div class="row">
+			<div ui-view></div>
+		</div>
+		<script type="text/javascript" src="./bower_components/angular/angular.js" ></script>
+		<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
 </html>
 
  
