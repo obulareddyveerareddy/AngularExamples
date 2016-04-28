@@ -1,0 +1,44 @@
+<!DocType html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>hello</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./bower_components/AngularJS-Toaster/toaster.css">
+	</head>
+	<body class="container">
+		<toaster-container toaster-options="{'time-out': 12000}"></toaster-container>
+		<div class="row" style="margin-top:40px;">
+			<table class="table table-condensed table-striped table-hover" ng-controller="Topic7Controller">
+				<tbody>
+					<tr>
+						<td>
+							<input type="text" id="authValue" name="authValue" ng-model="authValue"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="randomValue">Enter Key</label>
+							<input type="text" id="randomValue" name="randomValue" ng-model="randomValue"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="btn-group" role="group">
+								<button class="btn btn-primary" ng-click="onValidateBtnClick()">Validate</button>
+								<button class="btn btn-default" ng-click="onRefreshBtnClick()">Refresh</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript" src="./bower_components/angular/angular.js" ></script>
+		<script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js" ></script>
+		<script type="text/javascript" src="./bower_components/AngularJS-Toaster/toaster.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
+
+ 

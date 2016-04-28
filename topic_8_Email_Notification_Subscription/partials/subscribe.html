@@ -1,0 +1,34 @@
+<div class="row" style="margin-top:120px;">
+					<div class="col-md-offset-3 col-md-5">
+						<table class="table">
+							<tr>
+								<td>News Letter Subscription</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="email"> Email </label>
+									<input type="email" id="email" name="email" placeholder="email" 
+										ng-model="notify.email" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" id="random" name="random" placeholder="random" 
+										ng-model="random" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="acceptRandomValue"> Enter Random Number </label>
+									<input type="text" id="acceptRandomValue" name="acceptRandomValue" placeholder="Please enter above random value" 
+										ng-model="notify.randomValue" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<button class="btn btn-primary" ng-click="onSubmitBtnClick()">Submit</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
