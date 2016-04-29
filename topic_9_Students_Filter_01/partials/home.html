@@ -1,0 +1,23 @@
+<div class="row">
+<input type="text" ng-model="filterValue" placeholder="Search Student" />
+<table class="table">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Email</th>
+			<th>Mobile</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="student in students | filter:filterValue">
+			<td>{{$index + 1}}</td>
+			<td>{{student.fname}}</td>
+			<td>{{student.lname}}</td>
+			<td>{{student.email}}</td>
+			<td>{{student.mobile}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>

@@ -1,0 +1,27 @@
+<div ng-controller="RegisterCtrl" class="row">
+	Register Student {{admin}}
+
+	<div>
+		<fom>
+			<div>
+				<label for="fname">Fname</label>
+				<input type="text" id="fname" name="fname" class="form-control" ng-model="student.fname" />
+			</div>
+			<div>
+				<label for="lname">lname</label>
+				<input type="text" id="lname" name="lname" class="form-control" ng-model="student.lname" />
+			</div>
+			<div>
+				<label for="email">email</label>
+				<input type="text" id="email" name="email" class="form-control" ng-model="student.email" />
+			</div>
+			<div>
+				<label for="mobile">mobile</label>
+				<input type="text" id="mobile" name="mobile" class="form-control" ng-model="student.mobile" />
+			</div>
+			<div>
+				<button class="btn btn-primary" ng-click="onRegisterBtnClick()">Register</button>
+			</div>
+		</fom>
+	</div>
+</div>
