@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Directives</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.css" />
+	</head>
+	<body class="container">
+		
+		<table class="table table-bordered table-striped table-hover" style="margin-top:25%;">
+			<tr>
+				<th>With Summary Slot</th>
+				<th>With-Out Summary Slot</th>
+			</tr>
+			<tr>
+				<td>
+					<veera-details>
+						<span>More Info</span>
+			  			<p>With Slot</p>
+					</veera-details>
+				</td>
+				<td>
+					<veera-details>
+			  			<p>with-out Slot</p>
+					</veera-details>
+				</td>
+			</tr>
+		</table>
+
+		<script type="text/javascript" src="./bower_components/jquery/dist/jquery.js" ></script>
+		<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="./bower_components/angular/angular.js" ></script>
+		
+		<script type="text/javascript" src="app.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Providers & Forms</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../bower_components/AngularJS-Toaster/toaster.css" />
+		<style type="text/css">
+			/*input.ng-invalid.ng-touched {
+				background-color: #FA787E !important;
+			}
+
+			input.ng-valid.ng-touched {
+				background-color: #78FA89 !important;
+			}
+
+			.ng-invalid-age{
+				background-color: blue !important;
+			}*/
+		</style>
+	</head>
+	<body class="container-fluid">
+		<toaster-container></toaster-container>
+		<nav class="navbar navbar-light bg-info">
+		  <ul class="nav navbar-nav">
+		    <li class="nav-item active">
+		      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#" ui-sref="students">Students</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#"  ui-sref="master">Master</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">About</a>
+		    </li>
+		  </ul>
+		</nav>
+		<div class="container">
+			<div ui-view></div>
+		</div>
+
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js" ></script>
+		<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="../bower_components/angular/angular.js" ></script>
+		<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js" ></script>
+		<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
+		<script type="text/javascript" src="../bower_components/AngularJS-Toaster/toaster.js"></script>
+		
+
+		<script type="text/javascript" src="app.js" ></script>
+
+		<script type="text/javascript" src="./controller/studentsDetailsCtrl.js" ></script>
+		<script type="text/javascript" src="./controller/addNewStudentCtrl.js" ></script>
+		<script type="text/javascript" src="./controller/masterDetailsCtrl.js" ></script>
+		<script type="text/javascript" src="./controller/addNewMasterCtrl.js" ></script>
+
+		<script type="text/javascript" src="./services/studentsApiService.js" ></script>
+		<script type="text/javascript" src="./services/interceptorService.js" ></script>
+		<script type="text/javascript" src="./directives/integerDirective.js" ></script>
+		<script type="text/javascript" src="./directives/minAgeDirective.js" ></script>
+	</body>
+</html>

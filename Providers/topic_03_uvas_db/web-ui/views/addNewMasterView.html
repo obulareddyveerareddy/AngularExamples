@@ -1,0 +1,32 @@
+<form name="master" class="form-horizantal">
+	<div class="row">
+		<h2>Add New Master</h2>
+		<div class="form-group col-md-12">
+			<labl class="label-control col-md-2" for="uname">User Name</labl>
+			<div class="col-md-10">
+				<input type="text" id="uname" name="uname" ng-model="master.userName" class="form-control" ng-class="'bg-primary'" required />
+				<span ng-show="master.uname.$untouched">Please try to set a value</span> <br/>
+				<span ng-show="master.uname.$touched">Thanks for trying to set value</span><br/>
+				<span ng-show="master.uname.$pristine">Value is not changed !!!</span><br/>
+				<span ng-show="master.uname.$dirty">You have changed the value successfully</span><br/>
+				<span ng-show="master.uname.$invalid">Value is invalid</span><br/>
+				<span ng-show="master.uname.$valid">Value is valid</span><br/>
+			</div>
+		</div>
+		<div class="form-group col-md-12">
+			<labl class="label-control col-md-2" for="pwd">Password</labl>
+			<div class="col-md-10">
+				<input type="text" id="pwd" name="pwd" ng-model="master.password" class="form-control" required />
+			</div>
+		</div>
+		<div class="form-group col-md-12">
+			<labl class="label-control col-md-2" for="age">Age</labl>
+			<div class="col-md-10">
+				<input type="text" id="age" name="age" ng-model="master.masterAge" class="form-control" required min-age ng-model-options="{debounce: { default: 500, age: 2000 } }" />
+				<div ng-show="master.age.$touched">
+					<span ng-show="master.age.$error.age">Age should be greater than 16</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

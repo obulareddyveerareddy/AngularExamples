@@ -1,0 +1,60 @@
+<div class="container">
+<table class="table table-bordered col-md-12">
+	<tr>
+		<td><h4>@ usage</h4></td>
+		<td>
+			<div class="col-md-offset-2 col-md-2">
+				<button class="btn btn-warning pull-right">--</button>
+			</div>
+			<div class="col-md-4">
+				<input type="text" class="form-control col-md-4" placeholder="Increment Value" ng-model="inc" />
+			</div>
+			<div class="col-md=4">
+				<button class="btn btn-warning">++</button>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><h4>= usage</h4></td>
+		<td>
+			<div class="col-md-offset-2 col-md-2">
+				<button class="btn btn-warning pull-right">--</button>
+			</div>
+			<div class="col-md-4">
+				<input type="text" class="form-control" placeholder="Increment Value" ng-model="equalInc" />
+			</div>
+			<div class="col-md=4">
+				<button class="btn btn-warning">++</button>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><h4>< One-way binding</h4></td>
+		<td>
+			<div class="col-md-offset-2 col-md-2">
+				<button class="btn btn-warning pull-right">--</button>
+			</div>
+			<div class="col-md-4">
+				<input type="text" class="form-control" placeholder="Increment Value" ng-model="oneWayBind" />
+			</div>
+			<div class="col-md=4">
+				<button class="btn btn-warning">++</button>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><h4>Calling Function</h4></td>
+		<td>
+			<div class="col-md-offset-2 col-md-2">
+				<button class="btn btn-warning pull-right" ng-click="onDec()">--</button>
+			</div>
+			<div class="col-md-4">
+				<input type="text" class="form-control" placeholder="Increment Value" ng-model="equalInc" />
+			</div>
+			<div class="col-md=4">
+				<button class="btn btn-warning" ng-click="onInc()">++</button>
+			</div>
+		</td>
+	</tr>
+</table>
+</div>

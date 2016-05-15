@@ -1,0 +1,25 @@
+
+	<div class="row">
+		<div class="col-md-6" ng-controller="StudentController">
+			<h1>Student</h1>
+			<table class="table table-bordered">
+				<tr>
+					<td>Name</td>
+					<td>Equals</td>
+					<td>oneWayBind</td>
+					<td>"& - Passing Function"</td>
+				</tr>
+				<tr>
+					<td>{{name}}</td>
+					<td>{{equalInc}}</td>
+					<td>
+						{{oneWayBind}}
+						<button class="btn btn-primary" ng-click="onIncOneWayBind()">++</button>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<display-name local-inc="50" inc="equalInc" one-way-bind="oneWayBind" on-inc="onInc()" on-dec="onDec()"></display-name>
+		</div>
+	</div>
+

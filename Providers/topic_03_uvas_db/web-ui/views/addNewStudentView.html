@@ -1,0 +1,88 @@
+<form name="student" class="form-horizontal" role="form"  novalidate>
+	<h2>Add New Student</h2>
+	<hr/>
+	<div class="form-group col-md-8">
+		<label for="userName" class="control-label col-md-2">User Name</label>
+		<div class="col-md-10">
+			<input type="text" name="userName" id="userName" class="form-control" ng-model="studentRecord.userName" />
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="password" class="control-label col-md-2">Password</label>
+		<div class="col-md-10">
+			<input type="password" name="password" id="password" class="form-control" ng-model="studentRecord.password" required />
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="nameCmp" class="control-label col-md-2">Name</label>
+		<div class="col-md-10">
+			<input type="text" name="nameCmp" id="nameCmp" class="form-control" ng-model="studentRecord.name" required />
+			<div ng-show="student.nameCmp.$touched">
+				<span ng-show="student.nameCmp.$error.required">Tell us your name</span>
+			</div>
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="email" class="control-label col-md-2">Email</label>
+		<div class="col-md-10"> 
+			<input type="email" name="email" id="email" class="form-control" ng-model="studentRecord.email" required ng-model-options="{ updateOn: 'blur' }"  />
+			<div ng-show="student.email.$touched">
+				<span ng-show="student.email.$error.required">Tell us your email</span>
+				<span ng-show="student.email.$error.email">This is not a valied email</span>
+			</div>
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="cfemail" class="control-label col-md-2">Confirm Email</label>
+		<div class="col-md-10"> 
+			<input type="email" name="cfemail" id="cfemail" class="form-control" ng-model="studentRecord.cfemail" required />
+			<div ng-show="student.cfemail.$touched">
+				<span ng-show="student.cfemail.$error.required">Tell us your email</span>
+				<span ng-show="student.cfemail.$error.email">This is not a valied email</span>
+			</div>
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="mobile" class="control-label col-md-2">Mobile</label>
+		<div class="col-md-10">
+			<input type="text" name="mobile" id="mobile" class="form-control"  ng-model="studentRecord.mobile" required />
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="age" class="control-label col-md-2">Age</label>
+		<div class="col-md-10">
+			<input type="text" name="age" id="age" class="form-control"  ng-model="studentRecord.age" required integer />
+			<div ng-show="student.age.$touched">
+				<span ng-show="student.age.$error.integer">Not a valied age</span>
+			</div>	
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="passedOutYear" class="control-label col-md-2">Year Passed</label>
+		<div class="col-md-10">
+			<input type="text" name="passedOutYear" id="passedOutYear" class="form-control"  ng-model="studentRecord.passedOutYear" required />
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="occupation" class="control-label col-md-2">Occupation</label>
+		<div class="col-md-10">
+			<input type="text" name="occupation" id="occupation" class="form-control"  ng-model="studentRecord.occupation" required />
+		</div>
+	</div>
+	<div class="form-group col-md-8">
+		<label for="course" class="control-label col-md-2">Course</label>
+		<div class="col-md-10">
+			<select class="form-control" id="course" name="course" ng-options="item as item.val for item in coursesList track by item.id"  ng-model="studentRecord.course" ng-change="onCourseSelection()" required></select>
+			<span ng-show="student.course.$untouched">Please select course</span>
+		</div>
+	</div>
+	<div>
+		<div class="col-md-offset-2 col-md-10">
+			<div class="btn-group">
+				<button class="btn btn-success" ng-click="onAddBtnClick()">Add</button>
+				<button class="btn btn-warning">Reset</button>
+				<button class="btn btn-default">Cancel</button>
+			</div>
+		</div>
+	</div>
+</form>

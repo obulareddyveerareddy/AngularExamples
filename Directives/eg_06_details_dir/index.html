@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Directives</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.css" />
+	</head>
+	<body class="container">
+		
+		<table class="table table-bordered table-striped table-hover" style="margin-top: 25%;">
+			<tr>
+				<td>With Out Transclution Just template binding</td>
+				<td>
+					<my-dir>
+						<span>Student</span>
+						<h3>I am the child node text for my-dir directive</h3>
+					</my-dir>
+				</td>
+			</tr>
+		</table>
+
+
+		<script type="text/javascript" src="./bower_components/jquery/dist/jquery.js" ></script>
+		<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="./bower_components/angular/angular.js" ></script>
+		
+		<script type="text/javascript" src="app.js" ></script>
+	</body>
+</html>

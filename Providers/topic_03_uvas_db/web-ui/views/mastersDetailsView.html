@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-md-offset-6 col-md-6">
+		<h2>Masters Details</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-3">
+		<button class="btn btn-primary" ng-click="onNewMasterAddClick()">Add</button>
+	</div>
+	<div class="col-md-offset-6 col-md-3">
+		<select class="form-control" ng-options="item as item.val for item in coursesList track by item.id" ng-model="selectedCourse" ng-change="onCourseSelection()"></select>
+	</div>
+</div>
+<!-- <div class="row">
+	<div class="col-md-offset-9 col-md-3">
+		<select class="form-control"  ng-model="selectedCourse" ng-change="onCourseSelection()">
+			<options ng-repeat="item in coursesList">Hello</options>
+		</select>
+	</div>
+</div> -->
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover table-striped table-bordered">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Name</th>
+					<th>Mobile</th>
+					<th>Email</th>
+					<th>Working As</th>
+				</tr>
+			</thead>
+		</table>	
+	</div>
+</div>
